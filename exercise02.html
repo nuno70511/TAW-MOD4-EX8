@@ -21,6 +21,16 @@
       function validate(e) {
         var userName = document.getElementById("Username").value;
         var password = document.getElementById("Password").value;
+
+
+        if (userName == ""){
+          alert("O campo de username esta vazio!");
+          e.preventDefault();
+        }
+        else if (password == ""){
+          alert("O campo de password esta vazio!");
+          e.preventDefault();
+        }
       }
 
       document
