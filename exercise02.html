@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TAW-MOD4-EX8-02</title>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <form method="post" action="Process.html" id="logInForm">
+      Username:
+      <input type="text" name="Username" id="Username" size="10" /><br />
+      Password:
+      <input type="password" name="password" id="Password" size="10" /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset Form" />
+    </form>
+    <script>
+      function validate(e) {
+        var userName = document.getElementById("Username").value;
+        var password = document.getElementById("Password").value;
+      }
+
+      document
+        .getElementById("logInForm")
+        .addEventListener("submit", function(e) {
+          validate(e);
+        });
+    </script>
+  </body>
+</html>

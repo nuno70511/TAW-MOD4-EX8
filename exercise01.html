@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TAW-MOD4-EX8-01</title>
+  </head>
+  <body>
+    <div id="page">
+      <div id="header"><h1 id="title">Lorem ipsum dolor sit amet</h1></div>
+      <div id="content">
+        <h2>Aliquam lacinia tristique hendrerit</h2>
+        <p>Phasellus leo dui, fermentum quis justo ac, venenatis efficitur dui.</p>
+        <p>Aenean neque felis, volutpat id lacinia et, volutpat a augue.</p>
+      </div>
+    </div>
+
+    
+    <script>
+      let fc = document.getElementById("page").firstElementChild;
+      let lc = document.getElementById("page").lastElementChild;
+      let ns = document.getElementById("header").nextElementSibling;
+      let ps = document.getElementById("content").previousElementSibling;
+      let pn = document.getElementById("header").parentNode;
+      let cn = document.getElementById("page").childNodes;
+
+      console.log(fc);
+      console.log(lc);
+      console.log(ns);
+      console.log(ps);
+      console.log(pn);
+      console.log(cn);
+    </script>
+  </body>
+</html>
