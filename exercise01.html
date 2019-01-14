@@ -31,6 +31,23 @@
       console.log(ps);
       console.log(pn);
       console.log(cn);
+
+      let tn1 = document.createTextNode("1");
+      let p1 = document.createElement("p");
+      p1.appendChild(tn1);
+      document.body.appendChild(p1);
+
+      let tn2 = document.createTextNode("2");
+      let p2 = document.createElement("p");
+      p2.appendChild(tn2);
+      document.body.insertBefore(p2, p1);
+
+      document.body.removeChild(p1);
+
+      let tn3 = document.createTextNode("3");
+      let p3 = document.createElement("p");
+      p3.appendChild(tn3);
+      document.body.replaceChild(p3, p2);
     </script>
   </body>
 </html>
